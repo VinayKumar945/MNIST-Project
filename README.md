@@ -1,95 +1,79 @@
-MNIST Handwritten Digit Classification
+# MNIST Handwritten Digit Classification
 
-A machine learning project that builds and evaluates models to classify handwritten digits using the famous MNIST dataset. The project demonstrates a full machine learning workflow including data preprocessing, model training, evaluation, and prediction.
+This project builds a machine learning model to classify handwritten digits using the well-known **MNIST dataset**. It demonstrates an end-to-end machine learning workflow, from loading and preprocessing image data to training a model, evaluating performance, and making predictions.
 
-Project Overview
+## Project Overview
 
-Handwritten digit recognition is a classic problem in computer vision and machine learning. The MNIST dataset contains thousands of labeled images of digits (0–9), each represented as a grayscale image.
+Handwritten digit recognition is a classic machine learning and computer vision problem. The MNIST dataset contains grayscale images of digits from **0 to 9**, and the goal is to correctly classify each image into its corresponding digit class.
 
-In this project, we train a machine learning model to accurately recognize and classify these digits.
+This project highlights practical machine learning skills such as:
 
-This project showcases practical skills in:
+- Data preprocessing
+- Feature preparation
+- Model training
+- Performance evaluation
+- Prediction on unseen data
 
-Data preprocessing
+## Dataset
 
-Feature scaling
+The project uses the **MNIST dataset**, which contains:
 
-Model training
-
-Performance evaluation
-
-Prediction on unseen data
-
-Dataset
-
-The project uses the MNIST dataset, which contains:
-
-70,000 images of handwritten digits
-
-28 × 28 grayscale images
-
-10 classes (digits 0–9)
+- **70,000 handwritten digit images**
+- **28 x 28 grayscale images**
+- **10 output classes (digits 0–9)**
 
 Dataset split:
 
-60,000 training images
+- **60,000 training images**
+- **10,000 testing images**
 
-10,000 testing images
+Each image is represented as pixel values that are used as input features for the model.
 
-Each image is flattened into a feature vector of 784 pixels.
+## Tech Stack
 
-Tech Stack
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- TensorFlow / Keras
+- Jupyter Notebook
 
-This project uses the following tools and libraries:
+## Workflow
 
-Python
+### 1. Data Loading
+The MNIST dataset is loaded and explored to understand the structure of the images and labels.
 
-NumPy
+### 2. Data Preprocessing
+The image data is prepared for modeling by:
+- Reshaping images if needed
+- Normalizing pixel values
+- Splitting into training and testing datasets
 
-Pandas
+### 3. Model Training
+A classification model is trained on the handwritten digit images to learn patterns across the 10 classes.
 
-Matplotlib
+### 4. Model Evaluation
+The trained model is evaluated using standard classification metrics such as:
 
-Scikit-learn
+- Accuracy
+- Confusion Matrix
+- Classification Report
 
-Jupyter Notebook
+### 5. Predictions
+The model is used to predict handwritten digits on unseen test images.
 
-Machine Learning Workflow
+## Results
 
-The notebook follows a structured ML pipeline:
+The model achieves strong performance on the MNIST test dataset and is able to classify handwritten digits with high accuracy.
 
-1. Data Loading
+The notebook also visualizes predictions and evaluates model performance to better understand where the model performs well and where errors occur. These visualizations help provide deeper insight into the strengths and limitations of the model.
 
-The MNIST dataset is loaded and explored to understand its structure and distribution.
+## Project Structure
 
-2. Data Preprocessing
-
-Reshaping image data
-
-Normalizing pixel values
-
-Preparing training and test sets
-
-3. Model Training
-
-A classification model is trained on the dataset to learn patterns from handwritten digits.
-
-4. Model Evaluation
-
-The model is evaluated using metrics such as:
-
-Accuracy
-
-Confusion Matrix
-
-Classification Report
-
-5. Predictions
-
-The trained model is used to predict digits on unseen test images.
-
-Results
-
-The trained model successfully learns patterns in handwritten digits and achieves strong classification performance on the test dataset.
-
-The notebook also visualizes predictions and evaluates model performance to better understand where the model performs well and where errors occur.
+```text
+MNIST-Project/
+├── MNIST_Project_Notebook.ipynb
+├── README.md
+├── requirements.txt
+└── .gitignore
